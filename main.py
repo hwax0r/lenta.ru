@@ -7,12 +7,14 @@
 
 
 import os
+import sys
 
 statistics = {}
 
 
 def main_menu():
-    path = input("\nВведите путь для анализа: ")
+    path = sys.argv[1]
+    print(path)
     if not os.path.exists(path):
         print("\n\tОшибка!\n\tТакого пути не существует.")
     return path
