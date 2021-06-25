@@ -39,7 +39,7 @@ def walker(path):
 
 def stats_output():
     for key, value in sorted(statistics.items(), key=lambda x: x[1], reverse=True):
-        print("{} : {}".format(key, value))
+        print("{}: {}".format(key, value))
 
 
 def main():
