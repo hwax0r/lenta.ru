@@ -22,7 +22,7 @@ def main_menu():
 
 def extension(filename):
     file_name, file_extension = os.path.splitext(filename)
-    return file_extension
+    return str(file_extension).lower()
 
 
 def update_stats(file_extension):
